@@ -10,9 +10,9 @@ def criaMatrizQuad():
       x = int(input("Insira o valor da {}º linha e {}º coluna da matriz: ".format(i+1,j+1)))
       linha.append(x)
     matriz.append(linha)
-  print(matriz)
+  for i in matriz:
+    print(i)
   return matriz
-
 
 #Calcula o determinante de uma matriz de ordem 4 ou maior
 # Usando o Teorema de Laplace
@@ -54,3 +54,5 @@ def determinante(matriz):
   else:
     print("Tamanho da matriz precisa ser maior que zero!")
 
+
+print("O determinante da matriz é: {}".format(determinante(criaMatrizQuad())))
