@@ -42,7 +42,6 @@ def menorComplementar(lin, col, matriz):
 def cofator(lin,col,matriz):
   return (-1)**(lin+col) * menorComplementar(lin,col, matriz)
 
-
 #Calcula Determinante de uma matriz quadrada
 def determinante(matriz):
   if len(matriz) > 0:
